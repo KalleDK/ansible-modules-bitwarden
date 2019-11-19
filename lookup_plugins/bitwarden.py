@@ -44,10 +44,10 @@ DOCUMENTATION = """
       field:
         description: field to return from bitwarden
         default: 'password'
-     custom_field:
+      custom_field:
         description: If True, look up named field in custom fields instead
           of top-level dictionary.
-     sync:
+      sync:
         description: If True, call `bw sync` before lookup
 """
 
