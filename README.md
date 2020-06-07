@@ -52,7 +52,7 @@ ok: [localhost] => {
 ```yaml
 # Get username for Google
 - debug:
-    msg: {{ lookup('bitwarden', 'Google', field='username' }}
+    msg: {{ lookup('bitwarden', 'Google', field='username') }}
 ```
 
 The above might result in:
@@ -69,7 +69,7 @@ ok: [localhost] => {
 ```yaml
 # Get all available fields for an entry
 - debug:
-    msg: {{ lookup('bitwarden', 'Google', field='item' }}
+    msg: {{ lookup('bitwarden', 'Google', field='item') }}
 ```
 
 The above might result in:
@@ -109,7 +109,7 @@ ok: [localhost] => {
 ```yaml
 # Get the value of a custom field
 - debug:
-    msg: {{ lookup('bitwarden', 'Google', field='mycustomfield', custom_field=true }}
+    msg: {{ lookup('bitwarden', 'Google', field='mycustomfield', custom_field=true) }}
 ```
 
 The above might result in:
